@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="images/bag.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--google montesserat font-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!--google ubuntu font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!--google mulish font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+  <!--bootstrap->
+  <!-CSSonly-->
+  <!--Bootstrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--JavaScript Bundle with Popper-->
+  <!--to make project working with bootstrap javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!----Bootstrap 4-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!--Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!--Css File for providing styles if required other than bootstrap-->
+
+  <link href="index.css" rel="stylesheet">
+  <!--jquery file-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    #but1 {
+      background-color: #900C3F;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+
+    }
+
+    #but2 {
+      background-color: #f39c12;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+
+    }
+
+    #but3 {
+      background-color: #dc7633;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+    }
+
+    .carousel-indicators {
+      top: 280px;
+    }
+
+
+    /* .container {
+      margin: top 10%;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:before {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 220%;
+      background: rgba(235, 53, 131, 0.7);
+      top: -50%;
+      left: -100%;
+      z-index: 1;
+      transform: rotate(25deg);
+      transform-origin: center top 0;
+      transition: .5s;
+
+    }
+
+    .card:hover:before {
+      left: 10%;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-text {
+      width: 100%;
+      padding: 0 20px;
+      position: absolute;
+      top: -100%;
+      color: #fff;
+      left: 0;
+      z-index: 2;
+      transition: 1.1s;
+
+    }
+
+    .card-text h3 {
+      font-family: poppins;
+    }
+
+    .card:hover .card-text {
+      top: 80px;
+    } */
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #644bff;
+      padding: 0 20px;
+    }
+
+    ::selection {
+      color: #fff;
+      background: #664AFF;
+    }
+
+    .wrapper {
+      max-width: 450px;
+      margin: 150px auto;
+    }
+
+    .wrapper .search-input {
+      background: #fff;
+      width: 100%;
+      border-radius: 5px;
+      position: relative;
+      box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    .search-input input {
+      height: 55px;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 60px 0 20px;
+      font-size: 18px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-input.active input {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .search-input .autocom-box {
+      padding: 0;
+      opacity: 0;
+      pointer-events: none;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .search-input.active .autocom-box {
+      padding: 10px 8px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .autocom-box li {
+      list-style: none;
+      padding: 8px 12px;
+      display: none;
+      width: 100%;
+      cursor: default;
+      border-radius: 3px;
+    }
+
+    .search-input.active .autocom-box li {
+      display: block;
+    }
+
+    .autocom-box li:hover {
+      background: #efefef;
+    }
+
+    .search-input .icon {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 55px;
+      width: 55px;
+      text-align: center;
+      line-height: 55px;
+      font-size: 20px;
+      color: #644bff;
+      cursor: pointer;
+    } */
+  </style>
+  <script>
+    let suggestions = [
+      "Channel",
+      "CodingLab",
+      "CodingNepal",
+      "YouTube",
+      "YouTuber",
+      "YouTube Channel",
+      "Blogger",
+      "Bollywood",
+      "Vlogger",
+      "Vechiles",
+      "Facebook",
+      "Freelancer",
+      "Facebook Page",
+      "Designer",
+      "Developer",
+      "Web Designer",
+      "Web Developer",
+      "Login Form in HTML & CSS",
+      "How to learn HTML & CSS",
+      "How to learn JavaScript",
+      "How to became Freelancer",
+      "How to became Web Designer",
+      "How to start Gaming Channel",
+      "How to start YouTube Channel",
+      "What does HTML stands for?",
+      "What does CSS stands for?",
+    ];
+    // getting all required elements
+    const searchWrapper = document.querySelector(".search-input");
+    const inputBox = searchWrapper.querySelector("input");
+    const suggBox = searchWrapper.querySelector(".autocom-box");
+    const icon = searchWrapper.querySelector(".icon");
+    let linkTag = searchWrapper.querySelector("a");
+    let webLink;
+
+    // if user press any key and release
+    inputBox.onkeyup = (e) => {
+      let userData = e.target.value; //user enetered data
+      let emptyArray = [];
+      if (userData) {
+        icon.onclick = () => {
+          webLink = `https://www.google.com/search?q=${userData}`;
+          linkTag.setAttribute("href", webLink);
+          linkTag.click();
+        }
+        emptyArray = suggestions.filter((data) => {
+          //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+          return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        });
+        emptyArray = emptyArray.map((data) => {
+          // passing return data inside li tag
+          return data = `<li>${data}</li>`;
+        });
+        searchWrapper.classList.add("active"); //show autocomplete box
+        showSuggestions(emptyArray);
+        let allList = suggBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+          //adding onclick attribute in all li tag
+          allList[i].setAttribute("onclick", "select(this)");
+        }
+      } else {
+        searchWrapper.classList.remove("active"); //hide autocomplete box
+      }
+    }
+
+    function select(element) {
+      let selectData = element.textContent;
+      inputBox.value = selectData;
+      icon.onclick = () => {
+        webLink = `https://www.google.com/search?q=${selectData}`;
+        linkTag.setAttribute("href", webLink);
+        linkTag.click();
+      }
+      searchWrapper.classList.remove("active");
+    }
+
+    function showSuggestions(list) {
+      let listData;
+      if (!list.length) {
+        userValue = inputBox.value;
+        listData = `<li>${userValue}</li>`;
+      } else {
+        listData = list.join('');
+      }
+      suggBox.innerHTML = listData;
+    }
+
+  </script>
+</head>
+
+<body>
+  <!-- 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide w-50" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id="but1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img height="400" src="https://m.media-amazon.com/images/I/81Xdo8YO4mS._AC_UL480_QL65_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img height="400" src="https://m.media-amazon.com/images/I/81HzMhbp3jS._SY695._SX._UX._SY._UY_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="400" src="https://m.media-amazon.com/images/I/81Xdo8YO4mS._AC_UL480_QL65_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="icon" type="image/x-icon" href="images/bag.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--google montesserat font-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!--google ubuntu font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!--google mulish font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+  <!--bootstrap->
+<!-CSSonly-->
+  <!--Bootstrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--JavaScript Bundle with Popper-->
+  <!--to make project working with bootstrap javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!----Bootstrap 4-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!--Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <body>
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <div class="card shadow-lg p-3 bg-body rounded">
+        <div class="card-body">
+          <div class="d-flex justify-content-center">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+              <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1" id="but1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                  id="but2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                  id="but3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSl3pxL4BsB3s8Tf1MVnH3sdyC-hHk5jtP_9ax-bUSFktsSz25tCIrIc-2H9trgMeXShO8nS7IRbtI&usqp=CAc"
+                    width="210" height="240">
+
+                </div>
+                <div class="carousel-item justify-content-center">
+                  <img
+                    src="https://images.dailyobjects.com/marche/product-images/bags-and-sleeves/dailyobjects/tote-bag/dailyobjects-blush-vegan-leather-fatty-tote-bag-images/DailyObjects-Blush-Vegan-Leather-Fatty-Tote-Bag.png?tr=cm-pad_resize,w-768,h-621,dpr-1"
+                    width="210" height="240">
+
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.dailyobjects.com/marche/product-images/bags-and-sleeves/dailyobjects/tote-bag/dailyobjects-tan-vegan-leather-fatty-tote-bag-images/DailyObjects-Tan-Vegan-Leather-Fatty-Tote-Bag.png?tr=cm-pad_resize,w-768,h-621,dpr-1"
+                    width="210" height="240">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="card-img-overlay">
+          <img class="d-flex justify-content-center"
+            src="https://images.dailyobjects.com/marche/icons/logo_named.png?tr=cm-pad_resize,w-135,h-27,dpr-1"
+            width="80" height="40">
+          <div class=" position-absolute top-0 end-0 py-1 rounded-circle my-3 me-2" style="background:whitesmoke;-webkit-box-shadow: 0 0 8px 4px #fff;
+                        -moz-box-shadow: 0 0 8px 4px #fff;
+                        box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.15); 
+"><i class="fa-sharp fa-solid fa-heart pe-2 ps-2 "></i></div>
+          <div class=" position-absolute top-1 end-0 py-1 rounded-circle my-1 me-2" style="background:whitesmoke;-webkit-box-shadow: 0 0 8px 4px #fff;
+                        -moz-box-shadow: 0 0 8px 4px #fff;
+                        box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.15); 
+"><i class="fa-solid fa-eye pe-2 ps-2"></i></div>
+
+        </div>
+        <div class="mask">
+
+          <h5>
+            <span class="badge bg-success ms-2 h-100 justify-content-start align-items-end">Eco <i
+                class="fa-solid fa-leaf"></i></span>
+          </h5>
+        </div>
+        <div class="card-text text-center">
+
+
+          <br>
+          <strong>Dialy Objects</strong>
+          <p class="text-center">Burgandy Vegan Leather | Fatty Tote Bag</p>
+          <div class="d-flex justify-content-center">
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:lightgray"></i>
+            </div>
+
+
+          </div>
+
+          <p class="h4"> <sup>&#x20B9;</sup>2,199</p>
+
+          <p class="small-text">Free Delivery</p>
+
+
+          <div class="d-flex">
+            <button type="button" class="btn btn-primary justify-align-left w-50">Add to cart<i
+                class="fa-solid fa-cart-shopping"></i></button>
+            <button type="button" class="btn btn-primary ms-2 w-50">Buy Now &#x20B9;</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <div class="wrapper">
+    <div class="search-input">
+      <a href="" target="_blank" hidden></a>
+      <input type="text" placeholder="Type to search">
+      <div class="autocom-box">
+
+      </div>
+      <div class="icon">
+        <i class="fas fa-search">
+
+        </i>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/backpacks.jpg" alt="rerke">
+          <div class="card-text">
+            <h3>Backpacks</h3>
+            <h5>Starts From 399</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict';
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation');
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();</script>
+
+
+</body>
+
+</html>
